@@ -1,4 +1,4 @@
-##Mun config
+# Mun config
 
 tää on mun config
 
