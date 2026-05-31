@@ -1,0 +1,11 @@
+{
+    "custom/pacman": {
+        "format": " {}",
+        "interval": "once",
+        "exec": "checkupdates | wc -l",
+        "on-click": "kitty -e topgrade",
+        "signal": 8,
+        "tooltip-format": "{} updates available",
+        "tooltip": false
+    }
+}

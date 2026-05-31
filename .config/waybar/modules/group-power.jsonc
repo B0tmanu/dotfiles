@@ -1,0 +1,34 @@
+{"group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": false,
+    },
+    "modules": [
+        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/quit",
+        "custom/lock",
+        "custom/reboot",
+    ]
+},
+//"custom/quit": {
+//    "format": "󰗼",
+//    "tooltip": false,
+//    "on-click": "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
+//},
+"custom/lock": {
+    "format": "󰍁",
+    "tooltip": false,
+    "on-click": "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
+},
+"custom/reboot": {
+    "format": "󰜉",
+    "tooltip": false,
+    "on-click": "systemctl reboot"
+},
+"custom/power": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "systemctl poweroff"
+}}

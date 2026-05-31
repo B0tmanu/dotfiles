@@ -1,0 +1,10 @@
+{
+  "custom/hyprtitle": {
+    "max-length": 50, // Optional max length to avoid long title
+    "tooltip": true,
+    "exec": "/home/botmanu/.config/hypertitle/hyprtitle", // Path to your hyprtitle script
+    "return-type": "json",
+    "on-click": "/home/botmanu/.config/hypertitle/hyprtitle copy --class",
+    "on-click-right": "/home/botmanu/.config/hypertitle/hyprtitle copy --title"
+  }
+}

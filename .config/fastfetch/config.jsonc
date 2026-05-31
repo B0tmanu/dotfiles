@@ -1,0 +1,90 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/images/bot.txt",
+    "color": {
+      "1": "#C6B7FF",
+    },
+    "padding": {
+      "top": 2,
+      "right": 6,
+    },
+  },
+  "display": {
+    "separator": " ",
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "title",
+      "keyWidth": 10,
+      "color": "#D8CCFF",
+    },
+    "break",
+    {
+      "type": "os",
+      "key": " ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+      "format": "Arch (Btw)",
+    },
+    {
+      "type": "host",
+      "key": "🖥 ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+      "format": "Zeibook Air",
+    },
+    {
+      "type": "shell",
+      "format": "{}",
+      "key": ">_",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+    },
+    {
+      "type": "packages",
+      "key": "󰏗 ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+    },
+    {
+      "type": "command",
+      "key": "󰃭 ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+    },
+    {
+      "type": "wm",
+      "format": "{} (wayland)",
+      "key": " ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+    },
+    {
+      "type": "cpu",
+      "key": "󰍛 ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+      "format": "AMD Ryzen 7 5700X3D",
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 ",
+      "keyColor": "#B8A6FF",
+      "color": "#E6E0FF",
+      "format": "NVIDIA GeForce RTX 3060",
+    },
+    "break",
+    "break",
+    "break",
+  ],
+}

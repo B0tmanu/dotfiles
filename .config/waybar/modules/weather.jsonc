@@ -1,0 +1,10 @@
+{
+"custom/weather": {
+    "exec": "python ~/.config/waybar/scripts/weather.py",
+    "restart-interval": 300,
+    "return-type": "json",
+    "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/d1fadc30a5ffab62024fe30c615ce8beb58aa5e72af731a0f2181ae43085285a",
+    "tooltip": false
+    // "format-alt": "{alt}",
+},
+}

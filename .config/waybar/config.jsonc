@@ -1,0 +1,42 @@
+[{
+    "layer": "top",
+    "output": "DP-1",
+    "margin-top": 5,
+    "include": [
+        "~/.config/waybar/modules/*.jsonc"
+    ],
+    "modules-left": [
+        "clock",
+        "hyprland/workspaces",
+        
+    ],
+    "modules-center": [
+        
+    ],
+    "modules-right": [
+        "custom/pacman",
+        "pulseaudio",
+        "group/group-power",
+        "tray"
+    ]   
+}, {      
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "margin-top": 5,
+    "include": [
+        "~/.config/waybar/modules/*.jsonc"
+    ],
+    "modules-left": [
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "tray"
+    ]
+}]
+
+
+

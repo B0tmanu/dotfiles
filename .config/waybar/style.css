@@ -1,0 +1,190 @@
+@import "colors/colors.css";
+
+
+* {
+    all: unset;
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces {
+    background: @crust;
+    padding: 5px 3px;
+    margin: 0 0 0 12px;
+    border: 1px solid @crust;
+    border-radius: 18px;
+    color: @text;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    color: @crust;
+    background: @base;
+    min-width: 10px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+#workspaces button.empty {
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background: @green;
+    color: @crust;
+    min-width: 30px;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+#workspaces button.urgent {
+    background: @red;
+    color: @crust;
+    border-radius: 16px;
+    min-width: 30px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+/*#workspaces button {
+    padding: 0px 6px;
+    
+    margin: 0px 6px;
+    border-radius: 50px;
+    color: transparent;
+    background: @base;
+    min-width: 10px;
+    font-size: 13px;
+* 
+    
+    transition: background 0.25s ease-in-out, min-width 0.25s ease-in-out, margin 0.25s ease-in-out;
+}
+
+#workspaces button.active {
+    background: @green;
+    color: @crust;
+    
+    min-width: 30px;
+    margin: 0px 3px;
+}
+
+#workspaces button.urgent {
+    background: @red;
+    color: @crust;
+    border-radius: 16px;
+    min-width: 30px;
+    margin: 0px 3px;
+}*/
+.modules-right {
+    margin-right: 6px;
+}
+
+/* Korjataan tray-kuvakkeiden oikean klikkauksen valikot */
+menu, .popup {
+    background-color: @base;
+    border: 1px solid @mauve; /* Valinnainen: tekee kivan liilan reunuksen valikolle */
+    padding: 4px;
+    border-radius: 13px;
+    margin: 4px;
+}
+
+/* Valikon sisällä olevat tekstit ja valinnat */
+menu menuitem, .popup menuitem {
+    color: @text;
+    padding: 4px 8px;
+}
+
+/* Kun liikutat hiirtä valikon valintojen päällä */
+menu menuitem:hover, .popup menuitem:hover {
+    background-color: @mauve;
+    color: @base;
+}
+
+
+#network.ethernet {
+    color: @mauve;
+    padding-right: 6px;
+    font-weight: 700;
+}
+
+
+tooltip {
+    background-color: @base;
+    color: @text;
+    border: 1px solid @mauve; /* Valinnainen: tekee kivan liilan reunuksen tooltipille */
+    border-radius: 13px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+#window,
+#custom-hyprtitle,
+#custom-weather,
+#clock,
+#custom-pacman,
+#pulseaudio,
+#tray {
+    background: @crust;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @crust;
+}
+
+#clock {
+    color: @peach;
+}
+
+#custom-weather {
+    color: @yellow;
+}
+
+#custom-pacman {
+    color: @red;
+}
+
+#pulseaudio {
+    color: @sapphire;
+}
+
+#custom-hyprtitle {
+    color: @mauve;
+}
+
+
+#custom-lock{
+    background: @crust;
+    padding-right: 15px;
+    border-radius: 50px;
+    border: 1px solid @crust;
+}
+
+#custom-reboot{
+    margin-right: 12px;
+}
+
+#group-power {
+    color: @lavender;
+    background: @crust;
+    padding-right: 5px;
+    padding-left: 13px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @crust;
+}
+
+#window {
+    color: @mauve;
+}

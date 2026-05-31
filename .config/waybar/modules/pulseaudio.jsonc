@@ -1,0 +1,8 @@
+{"pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "",
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "tooltip": false
+}}

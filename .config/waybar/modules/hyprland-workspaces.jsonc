@@ -1,0 +1,9 @@
+{
+	"hyprland/workspaces": {
+		"format": "{name}",
+		"all-outputs": true,
+	},
+		"persistent-workspaces": {
+             "*": 6 // 5 workspaces by default on every monitor
+                    }
+	}
