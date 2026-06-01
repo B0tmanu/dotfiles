@@ -115,7 +115,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias cls="clear"
+alias c="clear"
 alias vi="nvim"
 alias svi="sudo nvim"
 alias is="yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
