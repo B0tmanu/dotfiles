@@ -1,10 +1,9 @@
-# Mun config
+# Hyprland Dotfiles
 
-tää on mun config
 
-## Tarviit
+## You need
 
-tarviit nää
+git, stow
 
 ### Git
 
@@ -17,16 +16,16 @@ pacman -S git
 pacman -S stow
 ```
 
-## Asennus
+## Install
 
-cloonaa tää repo
+clone repo
 
 ```
 $ git clone git@github.com:B0tmanu/dotfiles.git
 $ cd dotfiles
 ```
 
-sitte stow
+and stow
 
 
 ```
