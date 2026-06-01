@@ -21,7 +21,7 @@ pacman -S stow
 clone repo
 
 ```
-$ git clone git@github.com:B0tmanu/dotfiles.git
+$ git clone https://github.com/B0tmanu/dotfiles.git
 $ cd dotfiles
 ```
 
