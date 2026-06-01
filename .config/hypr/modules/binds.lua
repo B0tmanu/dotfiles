@@ -57,7 +57,7 @@ hl.bind(mainMod .. " + SHIFT + A", hl.dsp.layout("swapcol l"))
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.layout("swapcol r"))
 
 hl.bind(mainMod .. " + S", hl.dsp.layout("consume_or_expel prev"))
-
+hl.bind(mainMod .. " + X", hl.dsp.layout("fit visible"))
 hl.bind(mainMod .. " + F", hl.dsp.layout("colresize +conf"))
 
 -- Switch workspaces with mainMod + [0-9]
@@ -71,13 +71,13 @@ end
 -- Example special workspace (scratchpad)
 --hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 --hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
-hl.bind("SUPER + X", function ()
-    hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
-    hl.dispatch(hl.dsp.window.move({workspace = "+0"}))
-    hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
-    hl.dispatch(hl.dsp.window.move({workspace = "special:minimize"}))
-    hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
-end)
+--hl.bind("SUPER + X", function ()
+--    hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
+--    hl.dispatch(hl.dsp.window.move({workspace = "+0"}))
+--    hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
+--    hl.dispatch(hl.dsp.window.move({workspace = "special:minimize"}))
+--    hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
+--end)
 -- Scroll through existing workspaces with mainMod + scroll
 --hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 --hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
