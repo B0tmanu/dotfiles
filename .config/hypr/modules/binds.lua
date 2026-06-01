@@ -45,13 +45,18 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + SHIFT+ F", hl.dsp.window.fullscreen("maximized", "toggle"))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + A", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + D", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 
+
+hl.bind(mainMod .. " + D", hl.dsp.layout("move +col"))
+hl.bind(mainMod .. " + A", hl.dsp.layout("move -col"))
 hl.bind(mainMod .. " + SHIFT + A", hl.dsp.layout("swapcol l"))
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.layout("swapcol r"))
+
+hl.bind(mainMod .. " + S", hl.dsp.layout("consume_or_expel prev"))
 
 hl.bind(mainMod .. " + F", hl.dsp.layout("colresize +conf"))
 
@@ -64,8 +69,8 @@ for i = 1, 10 do
 end
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+--hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
+--hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 hl.bind("SUPER + X", function ()
     hl.dispatch(hl.dsp.workspace.toggle_special("minimize"))
     hl.dispatch(hl.dsp.window.move({workspace = "+0"}))
