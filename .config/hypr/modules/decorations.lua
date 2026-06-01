@@ -1,4 +1,4 @@
-local mocha = require("themes.mocha").colors
+local colors = require("colors").colors
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
@@ -12,11 +12,8 @@ hl.config({
 		border_size = 2,
 
 		col = {
-			active_border = {
-				colors = { mocha.maroon, mocha.green, },
-				angle = 45
-			},
-			inactive_border = mocha.base,
+			active_border = colors.primary,
+			inactive_border = colors.background,
 		},
 
 		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps

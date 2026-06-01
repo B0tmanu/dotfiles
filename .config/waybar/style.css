@@ -1,5 +1,5 @@
+@import "colors/colors2.css";
 @import "colors/colors.css";
-
 
 * {
     all: unset;
@@ -15,12 +15,12 @@ window#waybar {
 }
 
 #workspaces {
-    background: @crust;
+    background: @background;
     padding: 5px 3px;
     margin: 0 0 0 12px;
     border: 1px solid @crust;
     border-radius: 18px;
-    color: @text;
+    color: @on_primary;
 }
 
 #workspaces button {
@@ -28,7 +28,7 @@ window#waybar {
     margin: 0px 3px;
     border-radius: 50px;
     color: @crust;
-    background: @base;
+    background: @on_background;
     min-width: 10px;
     transition: all 0.3s ease-in-out;
     
@@ -40,7 +40,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: @green;
+    background: @primary;
     color: @crust;
     min-width: 30px;
     font-size: 13px;
@@ -93,8 +93,8 @@ window#waybar {
 
 /* Korjataan tray-kuvakkeiden oikean klikkauksen valikot */
 menu, .popup {
-    background-color: @base;
-    border: 1px solid @mauve; /* Valinnainen: tekee kivan liilan reunuksen valikolle */
+    background-color: @background;
+    border: 1px solid @background; /* Valinnainen: tekee kivan liilan reunuksen valikolle */
     padding: 4px;
     border-radius: 13px;
     margin: 4px;
@@ -108,7 +108,7 @@ menu menuitem, .popup menuitem {
 
 /* Kun liikutat hiirtä valikon valintojen päällä */
 menu menuitem:hover, .popup menuitem:hover {
-    background-color: @mauve;
+    background-color: @primary;
     color: @base;
 }
 
@@ -136,15 +136,15 @@ tooltip {
 #custom-pacman,
 #pulseaudio,
 #tray {
-    background: @crust;
+    background: @background;
     padding: 0 15px 0 15px;
     margin: 0 0 0 12px;
     border-radius: 50px;
-    border: 1px solid @crust;
+    border: 1px solid @background;
 }
 
 #clock {
-    color: @peach;
+    color: @primary;
 }
 
 #custom-weather {
@@ -152,23 +152,23 @@ tooltip {
 }
 
 #custom-pacman {
-    color: @yellow;
+    color: @primary;
 }
 
 #pulseaudio {
-    color: @sapphire;
+    color: @primary;
 }
 
 #custom-hyprtitle {
-    color: @mauve;
+    color: @primary;
 }
 
 
 #custom-lock{
-    background: @crust;
+    background: @background;
     padding-right: 15px;
     border-radius: 50px;
-    border: 1px solid @crust;
+    border: 1px solid @background;
 }
 
 #custom-reboot{
@@ -177,25 +177,25 @@ tooltip {
 
 
 #group-power {
-    color: @red;
-    background: @crust;
+    color: @primary;
+    background: @background;
     padding-right: 5px;
     padding-left: 13px;
     margin: 0 0 0 12px;
     border-radius: 50px;
-    border: 1px solid @crust;
+    border: 1px solid @background;
 }
 
 #window {
-    color: @mauve;
+    color: @primary;
 }
 
 #custom-launcher {
-    color: @text;
-    background: @crust;
+    color: @primary;
+    background: @background;
     padding-right: 10px;
     padding-left: 10px;
     margin: 0 0 0 12px;
     border-radius: 50px;
-    border: 1px solid @crust;
+    border: 1px solid @background;
 }

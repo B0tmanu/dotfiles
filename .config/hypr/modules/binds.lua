@@ -6,7 +6,7 @@
 local terminal = "kitty"
 local fileManager = "nemo"
 local menu = "rofi -show drun"
-local browser = "librewolf"
+local browser = "google-chrome-stable"
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -56,9 +56,9 @@ hl.bind(mainMod .. " + A", hl.dsp.layout("move -col"))
 hl.bind(mainMod .. " + SHIFT + A", hl.dsp.layout("swapcol l"))
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.layout("swapcol r"))
 
-hl.bind(mainMod .. " + S", hl.dsp.layout("consume_or_expel prev"))
+hl.bind(mainMod .. " + F", hl.dsp.layout("consume_or_expel prev"))
 hl.bind(mainMod .. " + X", hl.dsp.layout("fit visible"))
-hl.bind(mainMod .. " + F", hl.dsp.layout("colresize +conf"))
+hl.bind(mainMod .. " + S", hl.dsp.layout("colresize +conf"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]

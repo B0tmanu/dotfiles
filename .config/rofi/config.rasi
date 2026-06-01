@@ -9,12 +9,13 @@ configuration {
     display-calc: " 󰃬 ";
     }
 
-@theme "catppuccin"
+/*@theme "catppuccin"*/
+@theme "colors.rasi"
 
 * {
     font: "JetBrainsMono Nerd Font 14";
     background-color: transparent;
-    text-color: @text;
+    text-color: #ffffff;
 
     margin: 0px;
     padding: 0px;
@@ -29,43 +30,43 @@ window {
 
     border-radius: 0px;
     border: 2px;
-    border-color: #eba0ac;
+    border-color: @primary;
 
-    background-color: rgba(30, 30, 46, 0.92);
+    background-color: @surface;
 }
 
 /* ===== Main container ===== */
 mainbox {
     padding: 0px;
-    background-color: #1B1D2E;
+    background-color: @surface;
 }
 
 /* ===== Input bar ===== */
 inputbar {
-    background-color: @mantle;
+    background-color: @surface;
     border-radius: 1px;
     border: 1px;
-    border-color: rgba(90, 79, 111, 0.8);
+    border-color: @primary;
 
     padding: 8px 4px;
     spacing: 8px;
 }
 
 prompt {
-    text-color: #a6e3a1;
+    text-color: @primary;
     background-color: transparent;
 }
 
 entry {
-    text-color: @text;
+    text-color: @primary;
     placeholder: "search";
-    placeholder-color: #a6e3a1;
+    placeholder-color: @primary;
     background-color: transparent;
 }
 
 /* ===== List ===== */
 listview {
-    background-color: #1B1D2E;
+    background-color: @surface;
     margin: 10px 0 0;
 
     columns: 1;
@@ -79,20 +80,21 @@ element {
     spacing: 6px;
     border-radius: 1px;
 
-    background-color: #1B1D2E;
+    background-color: @surface;
 }
 
 element normal urgent {
-    text-color: @red;
+    text-color: @error-container;
 }
 
 element normal active {
-    text-color: @blue;
+    text-color: #89b4fa;
+    background-color: @surface;
 }
 
 element selected normal,
 element selected active {
-    background-color: rgba(138, 120, 170, 0.22);
+    background-color: @primary-container;
 }
 
 /* ===== Icons & text ===== */
@@ -113,10 +115,10 @@ message {
     border: 1px;
     border-color: rgba(90, 79, 111, 0.8);
 
-    background-color: rgba(17, 19, 24, 0.9);
+    background-color: @surface;
 }
 
 textbox {
     padding: 8px 24px;
-    background-color: rgba(17, 19, 24, 0.9);
+    background-color: @surface;
 }

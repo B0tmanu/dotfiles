@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
 # check if the user provided an argument
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <path_to_image>"
@@ -11,6 +13,14 @@ IMAGE="$1"
 # set wallpaper
 awww img "$IMAGE" --transition-type="center" --transition-step=1 --transition-fps="165"
 
+matugen image "$IMAGE" -m dark --source-color-index 1
+
+pkill waybar
+waybar > /dev/null 2>&1 &
+
+pkill swaync
+swaync > /dev/null 2>&1 &
+
 # send notification to the user
-notify-send "Wallpaper vaihettu"
+notify-send "All good"
 

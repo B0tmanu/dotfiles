@@ -2,7 +2,6 @@
 
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
-export XDG-CURRENT-DESKTOP=Hyprland
 
 
 
