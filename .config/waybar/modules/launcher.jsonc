@@ -1,0 +1,8 @@
+{
+    "custom/launcher": {
+        "format": "󰣇",
+        "on-click": "rofi -show drun",
+        "on-click-right": "$HOME/.local/bin/walset",
+        "tooltip": false
+    }
+}

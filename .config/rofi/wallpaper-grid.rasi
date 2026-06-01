@@ -1,0 +1,33 @@
+configuration {
+    show-icons: true;
+}
+
+@theme "config" // Voit korvata tämän omalla pääteemallasi, jos haluat samat värit
+
+window {
+    width:            95%;
+    height:           90%;
+    fullscreen:       true;
+}
+
+listview {
+    columns:          5;
+    lines:            4;
+    cycle:            true;
+    dynamic:          true;
+    layout:           vertical;
+}
+
+element {
+    orientation:      vertical;
+    padding:          10px;
+}
+
+element-icon {
+    size:             180px; // Tässä määritetään esikatselukuvan koko
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}
