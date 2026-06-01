@@ -1,5 +1,5 @@
 configuration {
-    modes: "drun";
+    modes: "drun,calc";
     sorting-method: "normal";
     show-icons: true;
     matching: "regex";

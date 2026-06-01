@@ -175,6 +175,7 @@ tooltip {
     margin-right: 12px;
 }
 
+
 #group-power {
     color: @lavender;
     background: @crust;
@@ -187,4 +188,14 @@ tooltip {
 
 #window {
     color: @mauve;
+}
+
+#custom-launcher {
+    color: @text;
+    background: @crust;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @crust;
 }

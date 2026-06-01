@@ -6,6 +6,7 @@
         "~/.config/waybar/modules/*.jsonc"
     ],
     "modules-left": [
+        "custom/launcher",
         "clock",
         "hyprland/workspaces",
         
