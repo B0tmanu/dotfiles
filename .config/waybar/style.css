@@ -152,7 +152,7 @@ tooltip {
 }
 
 #custom-pacman {
-    color: @red;
+    color: @yellow;
 }
 
 #pulseaudio {
@@ -177,7 +177,7 @@ tooltip {
 
 
 #group-power {
-    color: @lavender;
+    color: @red;
     background: @crust;
     padding-right: 5px;
     padding-left: 13px;
