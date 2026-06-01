@@ -8,8 +8,9 @@ fi
 
 IMAGE="$1"
 
+# set wallpaper
+awww img "$IMAGE" --transition-type="center" --transition-step=1 --transition-fps="165"
+
 # send notification to the user
 notify-send "Wallpaper vaihettu"
 
-# set wallpaper
-awww img "$IMAGE" --transition-type="center" --transition-step=1 --transition-fps="165"
